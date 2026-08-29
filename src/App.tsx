@@ -497,8 +497,8 @@ export default function App() {
       {menuOpen && (
         <div className="md:hidden fixed inset-0 z-40 flex flex-col pt-24 px-8 gap-2" style={{ background: "#0a0a0a" }}>
           <p className="font-bebas text-sm tracking-widest mb-2" style={{ color: "#555", letterSpacing: "0.16em" }}>SHOP BY CATEGORY</p>
-          {CATEGORIES.map((cat, i) => (
-            <button key={cat.id} onClick={() => handleCategorySelect(cat.id)}
+          {derivedCategories.filter(c => c.id !== 'All').map((cat) => (
+            <button key={cat.id} onClick={() => { handleCategorySelect(cat.id); setMenuOpen(false); }}
               className="font-rubik text-3xl text-left transition-colors"
               style={{ color: cat.color, background: "none", border: "none", cursor: "pointer" }}>
               {cat.label}

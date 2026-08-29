@@ -1,0 +1,10 @@
+{
+  "description": "Effortlessly manage your dropshipping business with a user-friendly platform that streamlines product sourcing, order fulfillment, and inventory tracking.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
